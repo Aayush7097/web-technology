@@ -1,0 +1,85 @@
+/* Develop an external style sheet named as “style.css” and provide different styles for h2, h3, hr, p, div, span,
+time, img & a tags. Apply different CSS selectors for tags and demonstrate the significance of each.
+### `style.css` */
+
+/* Styling h2 and h3 tags with element selectors */
+h2 {
+    color: #2a9d8f;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    color: #264653;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Styling hr tag with a class selector */
+hr.fancy {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff7f50, #ff6347);
+    margin: 20px 0;
+}
+
+/* Styling p tag with an ID selector */
+#intro-paragraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Styling div tag with a class selector */
+div.container {
+    padding: 20px;
+    border: 2px solid #e9c46a;
+    background-color: #f4a261;
+    border-radius: 10px;
+}
+
+/* Styling span tag with a class selector */
+span.highlight {
+    background-color: #e76f51;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+/* Styling time tag with a pseudo-class selector */
+time:hover {
+    color: #264653;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Styling img tag with an attribute selector */
+img[alt] {
+    border: 5px solid #2a9d8f;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styling a tag with a pseudo-class selector */
+a:link {
+    color: #2a9d8f;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #264653;
+}
+
+a:hover {
+    color: #e76f51;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ff7f50;
+}

@@ -1,0 +1,199 @@
+<!-- 5. Develop HTML page named as “newpaper.html” having variety of HTML semantic elements with
+background colors, text-colors & size for figure, table, aside, section, article, header, footer… etc. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Layout</title>
+    <style>
+        /* General styles for body */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            background-color: #ffffff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Article styles */
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        /* Aside styles */
+        aside {
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            font-size: 1em;
+            color: #495057;
+        }
+
+        /* Figure and Figcaption styles */
+        figure {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        figure img {
+            width: 100%;
+            border-bottom: 3px solid #2a9d8f;
+        }
+
+        figcaption {
+            background-color: #f1faee;
+            color: #1d3557;
+            padding: 10px;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        /* Table styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2a9d8f;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2a9d8f;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        The Daily Times
+    </header>
+
+    <!-- Main content section -->
+    <section>
+        <article>
+            <h2>Main News Headline</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non lectus ac turpis pulvinar faucibus. Vestibulum in velit vehicula, pellentesque turpis a, volutpat nisl.</p>
+        </article>
+
+        <article>
+            <h2>Local News</h2>
+            <p>Aliquam erat volutpat. Ut consequat velit in purus cursus, non fringilla mauris pulvinar. Suspendisse potenti. In hac habitasse platea dictumst.</p>
+        </article>
+
+        <article>
+            <h2>Sports Update</h2>
+            <p>Donec fermentum tincidunt justo, nec condimentum nulla faucibus non. Curabitur et justo eros. Maecenas euismod est sit amet mauris bibendum dapibus.</p>
+        </article>
+
+        <!-- Figure with an image and caption -->
+        <figure>
+            <img src="https://via.placeholder.com/800x400" alt="Sample Image">
+            <figcaption>Caption describing the image above</figcaption>
+        </figure>
+
+        <!-- Table to display data -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Team A</td>
+                    <td>10</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Team B</td>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Team C</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sidebar for additional content -->
+    <aside>
+        <h3>Editor's Note</h3>
+        <p>This section contains a special note from the editor regarding the day's news.</p>
+    </aside>
+
+    <!-- Footer section -->
+    <footer>
+        &copy; 2024 The Daily Times | All rights reserved.
+    </footer>
+
+</body>
+</html>
+
+
+

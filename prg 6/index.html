@@ -1,0 +1,32 @@
+<!-- Here's a basic example of a calculator using HTML, CSS, and JavaScript that performs the following operations: sum, product, difference, remainder, quotient, power, square-root, and square. -->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        <div class="buttons">
+            <button onclick="calculate('sum')">+</button>
+            <button onclick="calculate('difference')">-</button>
+            <button onclick="calculate('product')">*</button>
+            <button onclick="calculate('quotient')">/</button>
+            <button onclick="calculate('remainder')">%</button>
+            <button onclick="calculate('power')">^</button>
+            <button onclick="calculate('sqrt')">√</button>
+            <button onclick="calculate('square')">x²</button>
+        </div>
+        <h2 id="result">Result: </h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,190 @@
+<!-- Develop HTML page named as “registration.html” having variety of HTML input elements with background
+colors, table for alignment & provide font colors & size using CSS styles.
+### `registration.html` -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* General styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Style for the form table */
+        table {
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table cell alignment and spacing */
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        /* Style for input fields */
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        input[type="date"], 
+        input[type="number"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 1em;
+        }
+
+        /* Style for radio buttons and checkboxes */
+        input[type="radio"], 
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Style for submit and reset buttons */
+        input[type="submit"], 
+        input[type="reset"] {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #2a9d8f;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, 
+        input[type="reset"]:hover {
+            background-color: #21867a;
+        }
+
+        /* Font color and size for labels */
+        label {
+            color: #333;
+            font-size: 1em;
+        }
+
+        /* Style for table headers */
+        th {
+            text-align: left;
+            padding-bottom: 10px;
+            font-size: 1.2em;
+            color: #2a9d8f;
+        }
+
+        /* Style for section titles */
+        h2 {
+            text-align: center;
+            color: #264653;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Personal Information</th>
+            </tr>
+            <tr>
+                <td><label for="firstname">First Name:</label></td>
+                <td><input type="text" id="firstname" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name:</label></td>
+                <td><input type="text" id="lastname" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="number" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="3" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city" required></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td><input type="text" id="state" name="state" required></td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip Code:</label></td>
+                <td><input type="text" id="zip" name="zip" required></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country" required>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                        <option value="india">India</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" id="travelling" name="hobbies" value="travelling">
+                    <label for="travelling">Travelling</label>
+                    <input type="checkbox" id="music" name="hobbies" value="music">
+                    <label for="music">Music</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
